@@ -24,21 +24,32 @@ public class ResumeService {
 
     public ResumeAnalysisResult processResume(MultipartFile file) {
         try {
+            log.debug("Starting resume processing for file: {}", file.getOriginalFilename());
+            
             // Extract text from resume file
+            log.debug("Extracting text from file");
             String extractedText = extractTextFromFile(file);
+            log.debug("Extracted text length: {}", extractedText.length());
             
             // Analyze resume with AI
+            log.debug("Analyzing resume with AI");
             String aiAnalysis = aiClient.analyzeResume(extractedText);
+            log.debug("AI analysis completed");
             
             // Upload original file to S3
+            log.debug("Uploading file to S3");
             String s3Url = s3Service.uploadFile(file);
+            log.debug("File uploaded to S3: {}", s3Url);
             
-            return new ResumeAnalysisResult(
+            ResumeAnalysisResult result = new ResumeAnalysisResult(
                 file.getOriginalFilename(),
                 s3Url,
                 extractedText,
                 aiAnalysis
             );
+            
+            log.debug("Resume processing completed successfully");
+            return result;
             
         } catch (Exception e) {
             log.error("Error processing resume: {}", e.getMessage(), e);

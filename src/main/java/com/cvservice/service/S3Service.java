@@ -29,7 +29,7 @@ public class S3Service {
             String fileName = generateUniqueFileName(file.getOriginalFilename());
             
             S3Client s3Client = createS3Client();
-            
+            log.info("Uploading file to S3 bucket: {}", s3Config.getBucketName());
             PutObjectRequest putObjectRequest = PutObjectRequest.builder()
                     .bucket(s3Config.getBucketName())
                     .key(fileName)
