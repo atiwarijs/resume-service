@@ -10,6 +10,8 @@ public class VertexAIConfig {
 
     @Bean
     public ChatClient chatClient(VertexAiGeminiChatModel chatModel) {
-        return ChatClient.builder(chatModel).build();
+        return ChatClient.builder(chatModel)
+                .defaultOptions(chatModel.getDefaultOptions())
+                .build();
     }
 }

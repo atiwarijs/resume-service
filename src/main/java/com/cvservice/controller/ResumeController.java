@@ -20,10 +20,11 @@ public class ResumeController {
     private final ResumeService service;
 
     @PostMapping("/analyze")
-    public ResponseEntity<?> analyze(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<?> analyze(@RequestParam("file") MultipartFile file, @RequestParam("jobDescription") String jobDescription) {
         try {
             log.debug("Received file upload request: {}", file.getOriginalFilename());
-            return ResponseEntity.ok(service.processResume(file));
+            log.debug("Received job description");
+            return ResponseEntity.ok(service.processResume(file, jobDescription));
         } catch (Exception e) {
             log.error("Error in controller: {}", e.getMessage(), e);
             return ResponseEntity.status(500).body("Error processing file: " + e.getMessage());
