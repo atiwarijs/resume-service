@@ -1,0 +1,72 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /api/v1/security
+
+spring:
+  application:
+    name: SECURITY-SERVICE
+  profiles:
+    active: mysql
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8085/realms/securityrealm
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: user-service-group
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: java17324@gmail.com
+    password: pgdi sjmx iaxa nuko
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+management:
+  server:
+    port: 7000
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+keycloak:
+  realm: securityrealm
+  auth-server-url: http://localhost:8085
+  resource: security-service
+  client-id: security-service
+  client-secret: 6MR4OFQOizwMbG7PwIDpNheZSknXOwS5
+  credentials:
+    secret: 6MR4OFQOizwMbG7PwIDpNheZSknXOwS5
+  admin-client-id: educamp-security-admin
+  admin-client-secret: xH0WSF5gdGc0m8ZKMFe3KjifCFHcAjoC
+  admin-realm: master
+
+app:
+  frontend:
+    url: http://localhost:4200
+  password-reset:
+    token-expiry-minutes: 15
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
