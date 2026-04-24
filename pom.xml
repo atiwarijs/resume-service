@@ -13,7 +13,7 @@
     <description>Parent module for resume processing microservices</description>
     
     <modules>
-        <module>ai-analyzer-service</module>
+        <module>resume-service</module>
         <module>security-service</module>
     </modules>
     
