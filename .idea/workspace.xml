@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29ee8921-f1f6-44f5-8800-1b2349d5f076" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/SecurityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/SecurityServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/FeignClientInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/JwtAuthConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/config/JwtAuthConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/config/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/KeycloakConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/config/KeycloakConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/KeycloakProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/config/KeycloakProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/controller/PasswordResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/controller/PasswordResetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/controller/PasswordResetDebugController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/controller/PasswordResetDebugController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/controller/UserAccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/controller/UserAccessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/dto/PasswordResetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/dto/PasswordResetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/dto/PasswordResetResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/dto/PasswordResetResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/event/UserEventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/event/UserEventPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/exception/AuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/exception/AuthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/exception/AuthorizationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/exception/AuthorizationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/exception/EmailAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/exception/EmailAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/exception/KeycloakIntegrationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/exception/KeycloakIntegrationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/service/PasswordResetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/service/PasswordResetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/educamp/security/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/cv/security/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application-mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application-mysql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/test/java/com/educamp/security/SecurityServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/test/java/com/cv/security/SecurityServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/AdApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/aiclient/AIClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/config/OpenAIConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/config/S3Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/config/VertexAIConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/constants/AIPrompts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/controller/ResumeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/dto/ResumeAnalysisResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/exception/AIServiceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/exception/ResumeProcessingException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/service/ResumeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvservice/service/S3Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cvservice/AdApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3BsfMYNOaRjTaglYWz96INLdzr0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.ad [clean,install].executor": "Run",
+    "Maven.ad [clean].executor": "Run",
+    "Maven.ad [install].executor": "Run",
+    "Maven.ai-analyzer-service [clean,install].executor": "Run",
+    "Maven.resume-service [clean,install].executor": "Run",
+    "Maven.resume-service [clean].executor": "Run",
+    "Maven.security-service [clean,install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AdApplication (1).executor": "Run",
+    "Spring Boot.AdApplication.executor": "Run",
+    "Spring Boot.SecurityServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/projects/resume-service",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.AdApplication">
+    <configuration name="AdApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ai-analyzer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cvservice.AdApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cvservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ai-analyzer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cvservice.AdApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="security-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cv.security.SecurityServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AdApplication (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29ee8921-f1f6-44f5-8800-1b2349d5f076" name="Changes" comment="" />
+      <created>1775282651091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775282651091</updated>
+      <workItem from="1777011987961" duration="781000" />
+      <workItem from="1777012939221" duration="9122000" />
+      <workItem from="1777027587133" duration="743000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

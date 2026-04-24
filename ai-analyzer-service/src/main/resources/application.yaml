@@ -24,10 +24,10 @@ spring:
     vertex:
       ai:
         gemini:
-          project-id: ${GOOGLE_CLOUD_PROJECT_ID:test-project}
-          location: ${GOOGLE_CLOUD_LOCATION:us-central1}
-          api-key: ${GOOGLE_AI_API_KEY:test-api-key}
-          model: gemini-1.5-flash
+          project-id: resums
+          location: us-central1
+          api-key: keys
+          model: gemini-2.5-flash
           timeout: 30s
 
   autoconfigure:
@@ -37,10 +37,10 @@ spring:
 # AWS S3 Configuration
 aws:
   s3:
-    region: ${AWS_REGION:us-east-1}
-    bucket-name: ${S3_BUCKET_NAME:your-resume-bucket}
-    access-key: ${AWS_ACCESS_KEY:your-aws-access-key}
-    secret-key: ${AWS_SECRET_KEY:your-aws-secret-key}
+    region: eu-north-1
+    bucket-name: stores
+    access-key:
+    secret-key:
 
 # Logging Configuration
 logging:
