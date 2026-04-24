@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
-	<artifactId>ai-analyzer-service</artifactId>
+	<artifactId>resume-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AI Analyzer Service</name>
 	<description>AI-powered resume analysis and processing service</description>
