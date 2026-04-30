@@ -1,0 +1,21 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f7fafc;
+}
+
+.dashboard-header {
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
+
+.dashboard-content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .welcome-card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

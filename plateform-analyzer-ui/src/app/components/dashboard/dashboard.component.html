@@ -1,0 +1,39 @@
+<div class="dashboard-container">
+  <mat-toolbar class="dashboard-header" color="primary">
+    <span>Dashboard</span>
+    <span class="spacer"></span>
+    <div class="user-info">
+      <button mat-icon-button [matMenuTriggerFor]="userMenu" *ngIf="user">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #userMenu="matMenu">
+        <button mat-menu-item disabled>
+          <mat-icon>person</mat-icon>
+          <span>{{ user.name || user.email }}</span>
+        </button>
+        <button mat-menu-item (click)="onLogout()">
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+
+  <main class="dashboard-content">
+    <mat-card class="welcome-card">
+      <mat-card-header>
+        <mat-card-title>Welcome to Resume Analyzer</mat-card-title>
+        <mat-card-subtitle>Your AI-powered resume analysis platform</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Start analyzing resumes with AI-powered insights</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">
+          <mat-icon>upload_file</mat-icon>
+          <span>Upload Resume</span>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </main>
+</div>
