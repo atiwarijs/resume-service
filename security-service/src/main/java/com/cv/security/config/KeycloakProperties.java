@@ -20,10 +20,10 @@ public class KeycloakProperties {
 	@Value("${keycloak.realm}")
 	private String realm;
 
-	@Value("${keycloak.resource}")
+	@Value("${keycloak.client-id}")
 	private String clientId;
 
-	@Value("${keycloak.credentials.secret}")
+	@Value("${keycloak.client-secret}")
 	private String clientSecret;
 
 	@Value("${keycloak.admin-client-id}")

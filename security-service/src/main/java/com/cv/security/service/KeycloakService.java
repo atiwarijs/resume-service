@@ -13,6 +13,8 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Map;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 
 @Service
 public class KeycloakService {
@@ -38,7 +40,31 @@ public class KeycloakService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         
-        HttpEntity<TokenRequestDto> entity = new HttpEntity<>(tokenRequest, headers);
+        // Convert TokenRequestDto to MultiValueMap for form data
+        MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
+        if (tokenRequest.getGrantType() != null) {
+            formData.add("grant_type", tokenRequest.getGrantType());
+        }
+        if (tokenRequest.getClientId() != null) {
+            formData.add("client_id", tokenRequest.getClientId());
+        }
+        if (tokenRequest.getClientSecret() != null) {
+            formData.add("client_secret", tokenRequest.getClientSecret());
+        }
+        if (tokenRequest.getUsername() != null) {
+            formData.add("username", tokenRequest.getUsername());
+        }
+        if (tokenRequest.getPassword() != null) {
+            formData.add("password", tokenRequest.getPassword());
+        }
+        if (tokenRequest.getRefreshToken() != null) {
+            formData.add("refresh_token", tokenRequest.getRefreshToken());
+        }
+        if (tokenRequest.getScope() != null) {
+            formData.add("scope", tokenRequest.getScope());
+        }
+        
+        HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(formData, headers);
         
         return restTemplate.postForObject(url, entity, KeycloakTokenResponse.class);
     }

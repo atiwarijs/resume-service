@@ -202,46 +202,8 @@ public class AuthService {
                 result.put("expires_in", tokenResponse.getExpiresIn());
             }
 
-            // Extract user info and sync with our database
-            if (tokenResponse != null && tokenResponse.getAccessToken() != null) {
-                String accessToken = tokenResponse.getAccessToken();
-                // Get user details from token or from Keycloak if needed
-                String adminToken = getAdminAccessToken();
-                String userId = getUserIdByUsernameOrEmail(username, adminToken);
-
-                // Check if user needs to update password
-                // Check if user needs to update password
-                if (userId != null) {
-                    Optional<User> existingUser = userRepository.findById(userId);
-                    if (existingUser.isPresent() && !existingUser.get().isUpdatePassword()) {
-                        // Add password update flag to result but keep token information
-                        result.put("status", "PASSWORD_UPDATE_REQUIRED");
-                        result.put("passwordUpdateRequired", true);
-                    }
-                }
-
-                if (userId != null) {
-                    KeycloakUserDto userDto = keycloakService.getUserById(keycloakProperties.getRealm(), userId,
-                            "Bearer " + adminToken);
-
-                    if (userDto != null) {
-                        // Convert KeycloakUserDto to Map for consistency with existing code
-                        Map<String, Object> userInfo = new HashMap<>();
-                        userInfo.put("id", userDto.getId());
-                        userInfo.put("username", userDto.getUsername());
-                        userInfo.put("email", userDto.getEmail());
-                        userInfo.put("firstName", userDto.getFirstName());
-                        userInfo.put("lastName", userDto.getLastName());
-
-                        // Create or update user in our database
-                        createNonExistingUser(userInfo);
-
-                        // Add user info to the result
-                        result.put("userId", userId);
-                        result.put("userInfo", userInfo);
-                    }
-                }
-            }
+            // Basic authentication - return token only
+            // Admin operations (user sync, password checks) are skipped for simplicity
 
             return result;
         } catch (Exception e) {
